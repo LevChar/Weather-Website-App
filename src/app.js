@@ -5,6 +5,8 @@ const geocode = require('./utils/geocode')                          //Import geo
 const forecast = require('./utils/forecast')                        //Import forecast module
 
 const app = express()                                               //Creates an Express application. 
+const port = process.env.PORT || 3000                               //set the port, if used with Heroku will be asigned to PORT env variable
+                                                                    //and if used locally will be 3000
 
 app.set('view engine', 'hbs')                                       //Setup hbs(Handlebars) engine
 
@@ -79,6 +81,6 @@ app.get('*', (req, res) => {                                        //General - 
     })
 })
 
-app.listen(3000, () => {                                            //Start-Up the server
-    console.log('Server is up on port 3000.')
+app.listen(PORT, () => {                                            //Start-Up the server
+    console.log('Server is up on port' + PORT + '.')
 })

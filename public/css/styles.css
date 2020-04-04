@@ -34,7 +34,11 @@ header a {
 }
 
 .portrait {
-    width: 300px;
+    width: 500px;
+}
+
+.help-pic {
+    width: 400px;
 }
 
 .main-content {

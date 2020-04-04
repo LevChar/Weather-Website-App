@@ -32,10 +32,10 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('/help', (req, res) => {
-    res.render('help', {
-        helpText: 'This is some help text...',
-        title: 'Help page',
+app.get('/contact', (req, res) => {
+    res.render('contact', {
+        helpText: 'For technical assistance, general inquiries and suggestions for improvement, please contact by e-mail: fireballfxp@gmail.com',
+        title: 'Stay in touch',
         name: 'Arie Charfnadel'
     })
 })

@@ -81,6 +81,6 @@ app.get('*', (req, res) => {                                        //General - 
     })
 })
 
-app.listen(PORT, () => {                                            //Start-Up the server
-    console.log('Server is up on port' + PORT + '.')
+app.listen(port, () => {                                            //Start-Up the server
+    console.log('Server is up on port' + port + '.')
 })
